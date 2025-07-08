@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Libertinus+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: "Libertinus Mono", monospace;
+    background: linear-gradient(135deg, #2b0000, #000000);
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Heading */
+
+.text-center {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px 0 10px;
+    text-shadow: 0 0 5px #ff4d4d;
+}
+
+
+/* Calculator container */
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 25px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: rgba(26, 0, 0, 0.85);
+    box-shadow: 0 0 25px rgba(139, 0, 0, 0.8), 0 0 60px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+
+/* Each row of buttons or input */
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+
+/* Input display */
+
+.row input {
+    margin: 10px 0;
+    padding: 15px 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    box-shadow: inset 0 0 5px #8B0000;
+}
+
+
+/* Button style */
+
+.button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #8B0000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 0 0 8px rgba(139, 0, 0, 0.4);
+    margin: 4px;
+}
+
+
+/* Button hover effect */
+
+.button:hover {
+    background-color: #8B0000;
+    box-shadow: 0 0 10px #ff4d4d;
+}
+
+
+/* Responsive adjustments for small screens */
+
+@media (max-width: 420px) {
+    .container {
+        width: 90vw;
+        padding: 20px 15px;
+    }
+    .button {
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    .row input {
+        font-size: 1.5rem;
+    }
+    .text-center {
+        font-size: 1.5rem;
+    }
+}
